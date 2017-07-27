@@ -9,12 +9,12 @@ objectclass: top
 objectclass: organizationalUnit
 ou: groups
  
-dn: ou=people,dc=bellyfeed,dc=org
+dn: ou=users,dc=bellyfeed,dc=org
 objectclass: top
 objectclass: organizationalUnit
-ou: people
+ou: users
  
-dn: uid=dattieu,ou=people,dc=bellyfeed,dc=org
+dn: uid=dattieu,ou=users,dc=bellyfeed,dc=org
 objectclass: top
 objectclass: person
 objectclass: organizationalPerson
@@ -28,10 +28,10 @@ dn: cn=admin,ou=groups,dc=bellyfeed,dc=org
 objectclass: top
 objectclass: groupOfNames
 cn: admin
-member: uid=dattieu,ou=people,dc=bellyfeed,dc=org
+member: uid=dattieu,ou=users,dc=bellyfeed,dc=org
  
 dn: cn=user,ou=groups,dc=bellyfeed,dc=org
 objectclass: top
 objectclass: groupOfNames
 cn: user
-member: uid=dattieu,ou=people,dc=bellyfeed,dc=org
+member: uid=dattieu,ou=users,dc=bellyfeed,dc=org
