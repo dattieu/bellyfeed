@@ -1,0 +1,32 @@
+================================================================================
+===        		Belly Feed application - ApacheDS Set Up          			 ===
+================================================================================
+
+@author Dat Tieu
+
+--------------------------------------------------------------------------------
+
+# Basic installation
+
+1)	Download and install the ApacheDS (LDAP Server)
+	which can be found here: http://directory.apache.org/ .
+	
+2)	Open Services (Windows), start the server as a service. 
+
+3) 	Download and install the Apache Directory Studio,
+	which can be found here: http://directory.apache.org/studio/ .
+	
+# Create connection
+
+- Open Apache Directory Studio and create 'New Connection'
+- Default parameters for ApacheDS:
+	+ Hostname:			localhost
+	+ Port: 			10389
+	+ Bind dn or user: 	uid=admin,ou=system
+	+ Password:			secret
+- If connection succeeds, there will be a DIT (dc=example,dc=com) following by a Root DSE.
+- For more details, see here: https://directory.apache.org/studio/users-guide/ldap_browser/gettingstarted_create_connection.html
+
+# Basic tutorial on ApacheDS
+
+- See here http://krams915.blogspot.com/2011/01/ldap-apache-directory-studio-basic.html
