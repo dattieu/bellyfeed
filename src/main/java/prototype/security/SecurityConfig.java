@@ -11,7 +11,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.ldap.DefaultSpringSecurityContextSource;
 
 // FIXME Some error with LDAP schema! Need to have deep understanding about Directory Database
-@Configuration
+//@Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override

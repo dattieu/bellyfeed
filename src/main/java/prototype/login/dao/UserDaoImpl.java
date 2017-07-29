@@ -56,9 +56,9 @@ public class UserDaoImpl implements UserDao {
         		});
 	}
 
-    @Override
+	@Override
 	public List<User> getAll() {
-        return ldapTemplate.findAll(User.class);
+		return ldapTemplate.findAll(User.class);
 	}
 
 	private LdapName buildDn(User user) {
@@ -66,9 +66,9 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	private LdapName buildDn(String fullname) {
-        return LdapNameBuilder.newInstance()
-                .add("cn", fullname)
-                .build();
+		return LdapNameBuilder.newInstance()
+				.add("cn", fullname)
+				.build();
 	}
 	
 }
